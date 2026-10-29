@@ -1,0 +1,18 @@
+{
+  "title": "Checkout page crash after price formatting refactor",
+  "from": "2026-10-20T08:50:00Z",
+  "to": "2026-10-20T10:10:00Z",
+  "slack": {
+    "channel": "C07INCIDENT",
+    "thread_ts": "1792487944.000000"
+  },
+  "github": {
+    "repo": "acme/web"
+  },
+  "sentry": {
+    "project": "web"
+  },
+  "vercel": {
+    "project": "acme-web"
+  }
+}

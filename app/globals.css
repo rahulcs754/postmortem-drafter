@@ -1,0 +1,76 @@
+:root {
+  --bg: #f7f7f5;
+  --surface: #ffffff;
+  --fg: #1b1f24;
+  --muted: #5d6670;
+  --line: #dfe2e6;
+  --accent: #b4441f;
+  --likely: #8a5a00;
+  --guess: #7a3fa0;
+  --warn-bg: #fff4e0;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121416;
+    --surface: #1b1e21;
+    --fg: #e6e8ea;
+    --muted: #9aa3ad;
+    --line: #2c3136;
+    --accent: #f0875f;
+    --likely: #e3b25c;
+    --guess: #c79be6;
+    --warn-bg: #2d2416;
+    color-scheme: dark;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+a { color: inherit; }
+button, select, input, textarea { font: inherit; color: inherit; }
+button { background: var(--fg); color: var(--bg); border: 0; border-radius: 6px; padding: 8px 14px; cursor: pointer; }
+button:disabled { opacity: 0.5; cursor: default; }
+button:focus-visible, select:focus-visible, textarea:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+select, textarea, input { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 6px 8px; }
+
+.page { max-width: 1200px; margin: 0 auto; padding: 32px 16px 64px; display: grid; gap: 20px; }
+.masthead h1 { margin: 0 0 4px; font-size: 1.8rem; }
+.masthead p { margin: 0; color: var(--muted); max-width: 65ch; }
+.controls { display: flex; flex-wrap: wrap; gap: 12px 16px; align-items: center; }
+.controls label { display: flex; gap: 8px; align-items: center; }
+.hint { color: var(--muted); font-size: 0.9rem; }
+.error, .warn { background: var(--warn-bg); padding: 8px 12px; border-radius: 6px; margin: 0; }
+
+.metrics { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; }
+.metrics div { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 8px 14px; }
+.metrics dt { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+.metrics dd { margin: 0; font-weight: 600; font-variant-numeric: tabular-nums; }
+
+.split { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 20px; align-items: start; }
+@media (max-width: 860px) { .split { grid-template-columns: 1fr; } }
+.timeline, .draft { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px; min-width: 0; }
+.timeline { position: sticky; top: 16px; max-height: calc(100vh - 32px); overflow: auto; }
+@media (max-width: 860px) { .timeline { position: static; max-height: none; } }
+.timeline h2 { margin: 0 0 8px; font-size: 1rem; }
+.timeline ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
+.event { display: grid; grid-template-columns: 3.2rem 4.2rem 1fr; gap: 8px; padding: 6px; border-radius: 6px; font-size: 0.9rem; }
+.event time { font-variant-numeric: tabular-nums; color: var(--muted); }
+.event .title { overflow-wrap: anywhere; }
+.event .actor { color: var(--muted); }
+.event.error_burst .title, .event.issue .title { color: var(--accent); }
+.event.deploy .title, .event.rollback .title { font-weight: 600; }
+.event.focus { background: var(--warn-bg); }
+.src { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; padding-top: 2px; }
+
+.draft { display: grid; gap: 18px; }
+.draft-title { font-size: 1.3rem; font-weight: 700; width: 100%; }
+.section h3 { margin: 0 0 6px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+.empty { color: var(--muted); margin: 0; font-size: 0.9rem; }
+.claim { display: grid; gap: 6px; padding: 8px 0 8px 10px; border-left: 3px solid var(--line); margin-bottom: 8px; }
+.claim.likely { border-left-color: var(--likely); }
+.claim.guess { border-left-color: var(--guess); border-left-style: dashed; }
+.claim textarea { width: 100%; resize: vertical; }
+.claim-meta { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.cite { background: transparent; color: var(--fg); border: 1px solid var(--line); padding: 2px 8px; font-size: 0.8rem; font-variant-numeric: tabular-nums; }
+.remove { background: transparent; color: var(--muted); padding: 2px 6px; font-size: 0.8rem; margin-left: auto; }
+.export { display: flex; gap: 8px; flex-wrap: wrap; }

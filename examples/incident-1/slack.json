@@ -1,0 +1,58 @@
+{
+  "users": {
+    "U01PRIYA": "priya",
+    "U02RAHUL": "rahul",
+    "U03ARJUN": "arjun"
+  },
+  "permalink_base": "https://acme.slack.com/archives/C07INCIDENT",
+  "messages": [
+    {
+      "type": "message",
+      "ts": "1792487944.000000",
+      "user": "U01PRIYA",
+      "text": "Seeing a spike of checkout errors in Sentry. Anyone else? Opening this thread as the incident."
+    },
+    {
+      "type": "message",
+      "ts": "1792488030.000000",
+      "user": "U02RAHUL",
+      "text": "Yes, support has 6 tickets: checkout page goes blank after adding to cart. Mostly guest users."
+    },
+    {
+      "type": "message",
+      "ts": "1792488190.000000",
+      "user": "U01PRIYA",
+      "text": "Error is `TypeError: Cannot read properties of undefined (reading 'amount')` in formatPrice. Started ~09:12."
+    },
+    {
+      "type": "message",
+      "ts": "1792488345.000000",
+      "user": "U03ARJUN",
+      "text": "That's my PR #482, it went out at 09:08. Guest carts don't have `total` until shipping is picked. I removed the guard."
+    },
+    {
+      "type": "message",
+      "ts": "1792488420.000000",
+      "user": "U01PRIYA",
+      "text": "Let's revert instead of hotfix. Arjun can you open the revert PR? Token for the status page bot is xoxb-1234-abcd-not-real, don't paste it again."
+    },
+    {
+      "type": "message",
+      "ts": "1792489190.000000",
+      "user": "U03ARJUN",
+      "text": "Revert #483 merged, Vercel is building."
+    },
+    {
+      "type": "message",
+      "ts": "1792489460.000000",
+      "user": "U01PRIYA",
+      "text": "Deploy is live. Error rate back to zero in the last 2 min. Watching for 15 more."
+    },
+    {
+      "type": "message",
+      "ts": "1792490465.000000",
+      "user": "U01PRIYA",
+      "text": "Resolved. No new errors since 09:43. I'll write the postmortem. Action items: add guest-cart test, add Sentry alert to #incidents."
+    }
+  ]
+}
