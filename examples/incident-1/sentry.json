@@ -1,0 +1,696 @@
+{
+  "issues": [
+    {
+      "id": "4410021",
+      "shortId": "WEB-3KQ",
+      "title": "TypeError: Cannot read properties of undefined (reading 'amount')",
+      "culprit": "formatPrice(lib/money.ts)",
+      "level": "error",
+      "firstSeen": "2026-10-20T09:12:03.000Z",
+      "lastSeen": "2026-10-20T09:42:51.000Z",
+      "count": "169",
+      "userCount": 214,
+      "permalink": "https://acme.sentry.io/issues/4410021/"
+    }
+  ],
+  "events": {
+    "4410021": [
+      {
+        "eventID": "e0001",
+        "dateCreated": "2026-10-20T09:12:03.000Z"
+      },
+      {
+        "eventID": "e0002",
+        "dateCreated": "2026-10-20T09:12:12.000Z"
+      },
+      {
+        "eventID": "e0003",
+        "dateCreated": "2026-10-20T09:12:21.000Z"
+      },
+      {
+        "eventID": "e0004",
+        "dateCreated": "2026-10-20T09:12:30.000Z"
+      },
+      {
+        "eventID": "e0005",
+        "dateCreated": "2026-10-20T09:12:39.000Z"
+      },
+      {
+        "eventID": "e0006",
+        "dateCreated": "2026-10-20T09:12:48.000Z"
+      },
+      {
+        "eventID": "e0007",
+        "dateCreated": "2026-10-20T09:12:57.000Z"
+      },
+      {
+        "eventID": "e0008",
+        "dateCreated": "2026-10-20T09:13:06.000Z"
+      },
+      {
+        "eventID": "e0009",
+        "dateCreated": "2026-10-20T09:13:15.000Z"
+      },
+      {
+        "eventID": "e0010",
+        "dateCreated": "2026-10-20T09:13:24.000Z"
+      },
+      {
+        "eventID": "e0011",
+        "dateCreated": "2026-10-20T09:13:33.000Z"
+      },
+      {
+        "eventID": "e0012",
+        "dateCreated": "2026-10-20T09:13:42.000Z"
+      },
+      {
+        "eventID": "e0013",
+        "dateCreated": "2026-10-20T09:13:51.000Z"
+      },
+      {
+        "eventID": "e0014",
+        "dateCreated": "2026-10-20T09:14:00.000Z"
+      },
+      {
+        "eventID": "e0015",
+        "dateCreated": "2026-10-20T09:14:09.000Z"
+      },
+      {
+        "eventID": "e0016",
+        "dateCreated": "2026-10-20T09:14:18.000Z"
+      },
+      {
+        "eventID": "e0017",
+        "dateCreated": "2026-10-20T09:14:27.000Z"
+      },
+      {
+        "eventID": "e0018",
+        "dateCreated": "2026-10-20T09:14:36.000Z"
+      },
+      {
+        "eventID": "e0019",
+        "dateCreated": "2026-10-20T09:14:45.000Z"
+      },
+      {
+        "eventID": "e0020",
+        "dateCreated": "2026-10-20T09:14:54.000Z"
+      },
+      {
+        "eventID": "e0021",
+        "dateCreated": "2026-10-20T09:15:03.000Z"
+      },
+      {
+        "eventID": "e0022",
+        "dateCreated": "2026-10-20T09:15:12.000Z"
+      },
+      {
+        "eventID": "e0023",
+        "dateCreated": "2026-10-20T09:15:21.000Z"
+      },
+      {
+        "eventID": "e0024",
+        "dateCreated": "2026-10-20T09:15:30.000Z"
+      },
+      {
+        "eventID": "e0025",
+        "dateCreated": "2026-10-20T09:15:39.000Z"
+      },
+      {
+        "eventID": "e0026",
+        "dateCreated": "2026-10-20T09:15:48.000Z"
+      },
+      {
+        "eventID": "e0027",
+        "dateCreated": "2026-10-20T09:15:57.000Z"
+      },
+      {
+        "eventID": "e0028",
+        "dateCreated": "2026-10-20T09:16:06.000Z"
+      },
+      {
+        "eventID": "e0029",
+        "dateCreated": "2026-10-20T09:16:15.000Z"
+      },
+      {
+        "eventID": "e0030",
+        "dateCreated": "2026-10-20T09:16:24.000Z"
+      },
+      {
+        "eventID": "e0031",
+        "dateCreated": "2026-10-20T09:16:33.000Z"
+      },
+      {
+        "eventID": "e0032",
+        "dateCreated": "2026-10-20T09:16:42.000Z"
+      },
+      {
+        "eventID": "e0033",
+        "dateCreated": "2026-10-20T09:16:51.000Z"
+      },
+      {
+        "eventID": "e0034",
+        "dateCreated": "2026-10-20T09:17:00.000Z"
+      },
+      {
+        "eventID": "e0035",
+        "dateCreated": "2026-10-20T09:17:09.000Z"
+      },
+      {
+        "eventID": "e0036",
+        "dateCreated": "2026-10-20T09:17:18.000Z"
+      },
+      {
+        "eventID": "e0037",
+        "dateCreated": "2026-10-20T09:17:27.000Z"
+      },
+      {
+        "eventID": "e0038",
+        "dateCreated": "2026-10-20T09:17:36.000Z"
+      },
+      {
+        "eventID": "e0039",
+        "dateCreated": "2026-10-20T09:17:45.000Z"
+      },
+      {
+        "eventID": "e0040",
+        "dateCreated": "2026-10-20T09:17:54.000Z"
+      },
+      {
+        "eventID": "e0041",
+        "dateCreated": "2026-10-20T09:18:03.000Z"
+      },
+      {
+        "eventID": "e0042",
+        "dateCreated": "2026-10-20T09:18:12.000Z"
+      },
+      {
+        "eventID": "e0043",
+        "dateCreated": "2026-10-20T09:18:21.000Z"
+      },
+      {
+        "eventID": "e0044",
+        "dateCreated": "2026-10-20T09:18:30.000Z"
+      },
+      {
+        "eventID": "e0045",
+        "dateCreated": "2026-10-20T09:18:39.000Z"
+      },
+      {
+        "eventID": "e0046",
+        "dateCreated": "2026-10-20T09:18:48.000Z"
+      },
+      {
+        "eventID": "e0047",
+        "dateCreated": "2026-10-20T09:18:57.000Z"
+      },
+      {
+        "eventID": "e0048",
+        "dateCreated": "2026-10-20T09:19:06.000Z"
+      },
+      {
+        "eventID": "e0049",
+        "dateCreated": "2026-10-20T09:19:15.000Z"
+      },
+      {
+        "eventID": "e0050",
+        "dateCreated": "2026-10-20T09:19:24.000Z"
+      },
+      {
+        "eventID": "e0051",
+        "dateCreated": "2026-10-20T09:19:33.000Z"
+      },
+      {
+        "eventID": "e0052",
+        "dateCreated": "2026-10-20T09:19:42.000Z"
+      },
+      {
+        "eventID": "e0053",
+        "dateCreated": "2026-10-20T09:19:51.000Z"
+      },
+      {
+        "eventID": "e0054",
+        "dateCreated": "2026-10-20T09:20:00.000Z"
+      },
+      {
+        "eventID": "e0055",
+        "dateCreated": "2026-10-20T09:20:09.000Z"
+      },
+      {
+        "eventID": "e0056",
+        "dateCreated": "2026-10-20T09:20:18.000Z"
+      },
+      {
+        "eventID": "e0057",
+        "dateCreated": "2026-10-20T09:20:27.000Z"
+      },
+      {
+        "eventID": "e0058",
+        "dateCreated": "2026-10-20T09:20:36.000Z"
+      },
+      {
+        "eventID": "e0059",
+        "dateCreated": "2026-10-20T09:20:45.000Z"
+      },
+      {
+        "eventID": "e0060",
+        "dateCreated": "2026-10-20T09:20:54.000Z"
+      },
+      {
+        "eventID": "e0061",
+        "dateCreated": "2026-10-20T09:21:03.000Z"
+      },
+      {
+        "eventID": "e0062",
+        "dateCreated": "2026-10-20T09:21:12.000Z"
+      },
+      {
+        "eventID": "e0063",
+        "dateCreated": "2026-10-20T09:21:21.000Z"
+      },
+      {
+        "eventID": "e0064",
+        "dateCreated": "2026-10-20T09:21:30.000Z"
+      },
+      {
+        "eventID": "e0065",
+        "dateCreated": "2026-10-20T09:21:39.000Z"
+      },
+      {
+        "eventID": "e0066",
+        "dateCreated": "2026-10-20T09:21:48.000Z"
+      },
+      {
+        "eventID": "e0067",
+        "dateCreated": "2026-10-20T09:21:57.000Z"
+      },
+      {
+        "eventID": "e0068",
+        "dateCreated": "2026-10-20T09:22:06.000Z"
+      },
+      {
+        "eventID": "e0069",
+        "dateCreated": "2026-10-20T09:22:15.000Z"
+      },
+      {
+        "eventID": "e0070",
+        "dateCreated": "2026-10-20T09:22:24.000Z"
+      },
+      {
+        "eventID": "e0071",
+        "dateCreated": "2026-10-20T09:22:33.000Z"
+      },
+      {
+        "eventID": "e0072",
+        "dateCreated": "2026-10-20T09:22:42.000Z"
+      },
+      {
+        "eventID": "e0073",
+        "dateCreated": "2026-10-20T09:22:51.000Z"
+      },
+      {
+        "eventID": "e0074",
+        "dateCreated": "2026-10-20T09:23:00.000Z"
+      },
+      {
+        "eventID": "e0075",
+        "dateCreated": "2026-10-20T09:23:09.000Z"
+      },
+      {
+        "eventID": "e0076",
+        "dateCreated": "2026-10-20T09:23:18.000Z"
+      },
+      {
+        "eventID": "e0077",
+        "dateCreated": "2026-10-20T09:23:27.000Z"
+      },
+      {
+        "eventID": "e0078",
+        "dateCreated": "2026-10-20T09:23:36.000Z"
+      },
+      {
+        "eventID": "e0079",
+        "dateCreated": "2026-10-20T09:23:45.000Z"
+      },
+      {
+        "eventID": "e0080",
+        "dateCreated": "2026-10-20T09:23:54.000Z"
+      },
+      {
+        "eventID": "e0081",
+        "dateCreated": "2026-10-20T09:24:03.000Z"
+      },
+      {
+        "eventID": "e0082",
+        "dateCreated": "2026-10-20T09:24:12.000Z"
+      },
+      {
+        "eventID": "e0083",
+        "dateCreated": "2026-10-20T09:24:21.000Z"
+      },
+      {
+        "eventID": "e0084",
+        "dateCreated": "2026-10-20T09:24:30.000Z"
+      },
+      {
+        "eventID": "e0085",
+        "dateCreated": "2026-10-20T09:24:39.000Z"
+      },
+      {
+        "eventID": "e0086",
+        "dateCreated": "2026-10-20T09:24:48.000Z"
+      },
+      {
+        "eventID": "e0087",
+        "dateCreated": "2026-10-20T09:24:57.000Z"
+      },
+      {
+        "eventID": "e0088",
+        "dateCreated": "2026-10-20T09:25:06.000Z"
+      },
+      {
+        "eventID": "e0089",
+        "dateCreated": "2026-10-20T09:25:15.000Z"
+      },
+      {
+        "eventID": "e0090",
+        "dateCreated": "2026-10-20T09:25:24.000Z"
+      },
+      {
+        "eventID": "e0091",
+        "dateCreated": "2026-10-20T09:25:33.000Z"
+      },
+      {
+        "eventID": "e0092",
+        "dateCreated": "2026-10-20T09:25:42.000Z"
+      },
+      {
+        "eventID": "e0093",
+        "dateCreated": "2026-10-20T09:25:51.000Z"
+      },
+      {
+        "eventID": "e0094",
+        "dateCreated": "2026-10-20T09:26:00.000Z"
+      },
+      {
+        "eventID": "e0095",
+        "dateCreated": "2026-10-20T09:26:09.000Z"
+      },
+      {
+        "eventID": "e0096",
+        "dateCreated": "2026-10-20T09:26:18.000Z"
+      },
+      {
+        "eventID": "e0097",
+        "dateCreated": "2026-10-20T09:26:27.000Z"
+      },
+      {
+        "eventID": "e0098",
+        "dateCreated": "2026-10-20T09:26:36.000Z"
+      },
+      {
+        "eventID": "e0099",
+        "dateCreated": "2026-10-20T09:26:45.000Z"
+      },
+      {
+        "eventID": "e0100",
+        "dateCreated": "2026-10-20T09:26:54.000Z"
+      },
+      {
+        "eventID": "e0101",
+        "dateCreated": "2026-10-20T09:27:03.000Z"
+      },
+      {
+        "eventID": "e0102",
+        "dateCreated": "2026-10-20T09:27:12.000Z"
+      },
+      {
+        "eventID": "e0103",
+        "dateCreated": "2026-10-20T09:27:21.000Z"
+      },
+      {
+        "eventID": "e0104",
+        "dateCreated": "2026-10-20T09:27:30.000Z"
+      },
+      {
+        "eventID": "e0105",
+        "dateCreated": "2026-10-20T09:27:39.000Z"
+      },
+      {
+        "eventID": "e0106",
+        "dateCreated": "2026-10-20T09:27:48.000Z"
+      },
+      {
+        "eventID": "e0107",
+        "dateCreated": "2026-10-20T09:27:57.000Z"
+      },
+      {
+        "eventID": "e0108",
+        "dateCreated": "2026-10-20T09:28:06.000Z"
+      },
+      {
+        "eventID": "e0109",
+        "dateCreated": "2026-10-20T09:28:15.000Z"
+      },
+      {
+        "eventID": "e0110",
+        "dateCreated": "2026-10-20T09:28:24.000Z"
+      },
+      {
+        "eventID": "e0111",
+        "dateCreated": "2026-10-20T09:28:33.000Z"
+      },
+      {
+        "eventID": "e0112",
+        "dateCreated": "2026-10-20T09:28:42.000Z"
+      },
+      {
+        "eventID": "e0113",
+        "dateCreated": "2026-10-20T09:28:51.000Z"
+      },
+      {
+        "eventID": "e0114",
+        "dateCreated": "2026-10-20T09:29:00.000Z"
+      },
+      {
+        "eventID": "e0115",
+        "dateCreated": "2026-10-20T09:29:09.000Z"
+      },
+      {
+        "eventID": "e0116",
+        "dateCreated": "2026-10-20T09:29:18.000Z"
+      },
+      {
+        "eventID": "e0117",
+        "dateCreated": "2026-10-20T09:29:27.000Z"
+      },
+      {
+        "eventID": "e0118",
+        "dateCreated": "2026-10-20T09:29:36.000Z"
+      },
+      {
+        "eventID": "e0119",
+        "dateCreated": "2026-10-20T09:29:45.000Z"
+      },
+      {
+        "eventID": "e0120",
+        "dateCreated": "2026-10-20T09:29:54.000Z"
+      },
+      {
+        "eventID": "e0121",
+        "dateCreated": "2026-10-20T09:30:03.000Z"
+      },
+      {
+        "eventID": "e0122",
+        "dateCreated": "2026-10-20T09:30:19.000Z"
+      },
+      {
+        "eventID": "e0123",
+        "dateCreated": "2026-10-20T09:30:35.000Z"
+      },
+      {
+        "eventID": "e0124",
+        "dateCreated": "2026-10-20T09:30:51.000Z"
+      },
+      {
+        "eventID": "e0125",
+        "dateCreated": "2026-10-20T09:31:07.000Z"
+      },
+      {
+        "eventID": "e0126",
+        "dateCreated": "2026-10-20T09:31:23.000Z"
+      },
+      {
+        "eventID": "e0127",
+        "dateCreated": "2026-10-20T09:31:39.000Z"
+      },
+      {
+        "eventID": "e0128",
+        "dateCreated": "2026-10-20T09:31:55.000Z"
+      },
+      {
+        "eventID": "e0129",
+        "dateCreated": "2026-10-20T09:32:11.000Z"
+      },
+      {
+        "eventID": "e0130",
+        "dateCreated": "2026-10-20T09:32:27.000Z"
+      },
+      {
+        "eventID": "e0131",
+        "dateCreated": "2026-10-20T09:32:43.000Z"
+      },
+      {
+        "eventID": "e0132",
+        "dateCreated": "2026-10-20T09:32:59.000Z"
+      },
+      {
+        "eventID": "e0133",
+        "dateCreated": "2026-10-20T09:33:15.000Z"
+      },
+      {
+        "eventID": "e0134",
+        "dateCreated": "2026-10-20T09:33:31.000Z"
+      },
+      {
+        "eventID": "e0135",
+        "dateCreated": "2026-10-20T09:33:47.000Z"
+      },
+      {
+        "eventID": "e0136",
+        "dateCreated": "2026-10-20T09:34:03.000Z"
+      },
+      {
+        "eventID": "e0137",
+        "dateCreated": "2026-10-20T09:34:19.000Z"
+      },
+      {
+        "eventID": "e0138",
+        "dateCreated": "2026-10-20T09:34:35.000Z"
+      },
+      {
+        "eventID": "e0139",
+        "dateCreated": "2026-10-20T09:34:51.000Z"
+      },
+      {
+        "eventID": "e0140",
+        "dateCreated": "2026-10-20T09:35:07.000Z"
+      },
+      {
+        "eventID": "e0141",
+        "dateCreated": "2026-10-20T09:35:23.000Z"
+      },
+      {
+        "eventID": "e0142",
+        "dateCreated": "2026-10-20T09:35:39.000Z"
+      },
+      {
+        "eventID": "e0143",
+        "dateCreated": "2026-10-20T09:35:55.000Z"
+      },
+      {
+        "eventID": "e0144",
+        "dateCreated": "2026-10-20T09:36:11.000Z"
+      },
+      {
+        "eventID": "e0145",
+        "dateCreated": "2026-10-20T09:36:27.000Z"
+      },
+      {
+        "eventID": "e0146",
+        "dateCreated": "2026-10-20T09:36:43.000Z"
+      },
+      {
+        "eventID": "e0147",
+        "dateCreated": "2026-10-20T09:36:59.000Z"
+      },
+      {
+        "eventID": "e0148",
+        "dateCreated": "2026-10-20T09:37:15.000Z"
+      },
+      {
+        "eventID": "e0149",
+        "dateCreated": "2026-10-20T09:37:31.000Z"
+      },
+      {
+        "eventID": "e0150",
+        "dateCreated": "2026-10-20T09:37:47.000Z"
+      },
+      {
+        "eventID": "e0151",
+        "dateCreated": "2026-10-20T09:38:03.000Z"
+      },
+      {
+        "eventID": "e0152",
+        "dateCreated": "2026-10-20T09:38:19.000Z"
+      },
+      {
+        "eventID": "e0153",
+        "dateCreated": "2026-10-20T09:38:35.000Z"
+      },
+      {
+        "eventID": "e0154",
+        "dateCreated": "2026-10-20T09:38:51.000Z"
+      },
+      {
+        "eventID": "e0155",
+        "dateCreated": "2026-10-20T09:39:07.000Z"
+      },
+      {
+        "eventID": "e0156",
+        "dateCreated": "2026-10-20T09:39:23.000Z"
+      },
+      {
+        "eventID": "e0157",
+        "dateCreated": "2026-10-20T09:39:39.000Z"
+      },
+      {
+        "eventID": "e0158",
+        "dateCreated": "2026-10-20T09:39:55.000Z"
+      },
+      {
+        "eventID": "e0159",
+        "dateCreated": "2026-10-20T09:40:11.000Z"
+      },
+      {
+        "eventID": "e0160",
+        "dateCreated": "2026-10-20T09:40:27.000Z"
+      },
+      {
+        "eventID": "e0161",
+        "dateCreated": "2026-10-20T09:40:43.000Z"
+      },
+      {
+        "eventID": "e0162",
+        "dateCreated": "2026-10-20T09:40:59.000Z"
+      },
+      {
+        "eventID": "e0163",
+        "dateCreated": "2026-10-20T09:41:15.000Z"
+      },
+      {
+        "eventID": "e0164",
+        "dateCreated": "2026-10-20T09:41:31.000Z"
+      },
+      {
+        "eventID": "e0165",
+        "dateCreated": "2026-10-20T09:41:47.000Z"
+      },
+      {
+        "eventID": "e0166",
+        "dateCreated": "2026-10-20T09:42:03.000Z"
+      },
+      {
+        "eventID": "e0167",
+        "dateCreated": "2026-10-20T09:42:19.000Z"
+      },
+      {
+        "eventID": "e0168",
+        "dateCreated": "2026-10-20T09:42:35.000Z"
+      },
+      {
+        "eventID": "e0169",
+        "dateCreated": "2026-10-20T09:42:51.000Z"
+      }
+    ]
+  }
+}
