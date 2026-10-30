@@ -16,7 +16,7 @@ Next.js (App Router), TypeScript strict, Node 22, zod, Anthropic SDK, vitest. pn
 - Tests use recorded JSON fixtures (a sample incident). No network in tests.
 
 ## Commands
-- `npm test`, `npm run dev`, `npm run cli -- draft --fixture examples/incident-1 --no-ai`, `npm run typecheck`
+- `npm test`, `npm run dev`, `npm run cli -- draft --fixture examples/incident-1`
 
 ## Owner
 Senior React/Next.js dev, India. Wants short, simple English and a clean portfolio-grade repo.
